@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #8aa6b3;
+    color: #111;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #8aa6b3;
+}
+
+.logo h1{
+    margin-top : -5px;
+    font-size: 32px;
+}
+
+.logo p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.navigation a{
+    margin-right : 20px;
+    font-size : 24px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navigation a.product-page {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+}   
+
+.navigation a:hover{
+    color : white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8aa6b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+    width : 200px;
+    height : 50px;
+    text-align: center;  
+    align-content: center;
+    font-weight:bolder ;
+    font-size:18px;
+}
+
+.back-to{
+    background-color: #eaeaea;
+    width : 100%;
+    padding-left: 80px;
+    padding-top: 50px;
+    font-size : 20px;
+    font-weight: bold;
+}
+
+.back-to a{
+    text-decoration: none;
+    color : black;
+    transition: 0.3s;
+}
+
+.back-to a:hover{
+    text-decoration: underline;
+}
+
+.form-container {
+    display : flex;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.order-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 220px;
+}
+
+.order-details {
+    max-width: 800px;
+    padding-top : 120px;
+    padding-left: 70px; 
+    margin-left: 220px;
+    margin-bottom: -200px;
+}
+
+.order-details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.order-form {
+    max-width: 500px;
+    margin : 50px auto;
+    margin-left: 250px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.order-form label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.order-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.order-form input[type="text"]:focus {
+    border-color: #7eaeb3;
+    outline: none;
+}
+
+.order-form input[type="radio"],
+.order-form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+
+.order-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.order-form button[type="submit"] {
+    background-color: #8aa6b3;
+    color: white;
+}
+
+.order-form button[type="submit"]:hover {
+    background-color: #5f8f94;
+}
+
+.order-form button[type="reset"] {
+    background-color: #ccc;
+}
+
+.order-form button[type="reset"]:hover {
+    background-color: #999;
+}
+
+.footer{
+    background: #111;
+    color: white;
+    padding: 10px 60px 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap : 1px;
+    padding : 0px 500px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 67%;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: -40px;
+}
+
+.product-card h3 {
+    margin: 0px 0 5px;
+}
+
+.product-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer p{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNVision — Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>eNVision</h1>
+            <p>Sharpen Your Vision</p>
+        </div>
+        <nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a class="product-page" href="index.html">Products</a>
+            <a href="../rewards/index.html">Rewards</a>
+            <a href="../about_us/index.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class ="back-to">
+        <a href="../product_preview/index.html">BACK TO PRODUCT PREVIEW</a>
+    </div>
+
+    <div class="form-container">
+        <div class="info">
+            <div class="order-details">
+                <h2>Classic Glasses</h2>
+                <p class="price">$49.99</p>
+            </div>
+            <div class="order-image">
+                <img src="../assets/glasses1.png" alt="Classic Glasses">
+            </div>
+        </div>
+
+        <form class = "order-form" onsubmit="return validateData()">
+        <div>
+            <label>Full Name</label><br>
+            <input type="text" id="fullName">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Email</label><br>
+            <input type="text" id="email">
+        </div>
+
+        <br>
+        
+        <div>
+            <label>Payment Method</label><br>
+            <input type="radio" name="method" id="transfer">
+            <label>Transfer</label>
+
+            <input type="radio" name="method" id="cash">
+            <label>Cash</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Add-ons:</label><br>
+            <input type="checkbox" value="case"> Glasses Case <br>
+            <input type="checkbox" value="cleaner"> Lens Cleaner <br>
+            <input type="checkbox" value="warranty"> Extended Warranty
+        </div>
+
+        <br>
+
+        <div>
+            <input type="checkbox"  id="agree">
+            <label>I agree to the terms and conditions</label>
+        </div>
+
+        <br>
+
+        <button type = "reset">Clear</button>
+        <button type = "submit">Submit</button>
+    </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href = "https://outlook.com" target="_blank" onclick="return confirmEmail()">Email: envision@hotmail.com</a>
+            <a href = "https://wa.me/6281288150862" target="_blank" onclick="return confirmTelp()">Phone: 021-87754874</a>
+            <a href = "https://www.instagram.com/willys.loka" target="_blank" onclick="return confirmIg()">Instagram: @en.vision</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 eNVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>  
+</body>
+</html>
